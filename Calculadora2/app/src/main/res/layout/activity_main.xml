@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.CalculadoraViewImpl">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="1px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/numero1"
+                android:hint="Numero 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:ems="10"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/numero2"
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Numero 2"
+                android:ems="10"
+                android:inputType="number" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sumar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sumar"
+                android:text="Sumar" />
+            <Button
+                android:id="@+id/restar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="restar"
+                android:text="Restar" />
+            <Button
+                android:id="@+id/multiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="multiplicar"
+                android:text="Multiplicar" />
+            <Button
+                android:id="@+id/Dividir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="dividir"
+                android:text="Dividir" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_marginTop="15px"
+            android:layout_marginHorizontal="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>
